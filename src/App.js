@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import SongsList from './components/SongsList';
+import SongList from './components/SongList';
 import SongDetails from './components/SongDetails';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <SongsList/>
+        <SongList/>
         <SongDetails/>
       </div>
     );
