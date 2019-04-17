@@ -1,7 +1,20 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
 }
 
-.App-header {
-  display: flex;
+.btn {
+  background-color: lightblue;
+  border: 1px solid purple;
+  border-radius: 5px;
+  padding: 0 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.progress-bar {
+  text-align: center;
 }

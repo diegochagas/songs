@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { selectSong } from '../actions';
+import './SongList.css';
 
 class SongList extends React.Component {
   render(){
     return(
-      <div>
-        <h3>Song List</h3>
+      <div className="song-list">
+        <h2>Song List</h2>
         <ul>
           {this.renderSongs()}
         </ul>
@@ -19,7 +20,7 @@ class SongList extends React.Component {
       return (
         <li key={song.title}>
           <p>Title: {song.title}, duration: {song.duration}</p>
-          <button onClick={() => this.props.selectSong(song)}>Select</button>
+          <button className="btn" onClick={() => this.props.selectSong(song)}>Select</button>
         </li>
       )
     });
